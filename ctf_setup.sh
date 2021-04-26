@@ -1,5 +1,18 @@
 #! /bin/zsh
 
+#########################################################
+#                                                       #
+#    Simple zsh script for setting up and starting      #
+#            basic enumeration for a CTF.               #
+#                                                       #
+#   Script will create folders for basic scans, then    #
+#     start a new tmux session with the given name,     #
+#         and start nmap and other basic scans.         #
+#                                                       #
+#              Written by Ari Weinberg                  #
+#########################################################
+
+
 if [ $# -lt 2 ] || [ $# -gt 3 ]
 then
     echo "Invalid number of args!"
